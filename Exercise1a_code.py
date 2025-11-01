@@ -96,3 +96,4 @@ Ztr, Zte = Z_all[:len(X_train_scaled)], Z_all[len(X_train_scaled):]
 mlp_tsne = MLPRegressor(hidden_layer_sizes=(50,30), max_iter=100, random_state=42)
 mlp_tsne.fit(Ztr, y_train)
 score("t-SNE", y_test, mlp_tsne.predict(Zte))
+
