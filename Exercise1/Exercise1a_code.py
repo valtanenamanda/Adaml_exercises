@@ -97,3 +97,4 @@ mlp_tsne = MLPRegressor(hidden_layer_sizes=(50,30), max_iter=100, random_state=4
 mlp_tsne.fit(Ztr, y_train)
 score("t-SNE", y_test, mlp_tsne.predict(Zte))
 
+
